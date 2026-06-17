@@ -1,0 +1,8 @@
+# Memurai (Windows Redis) config for Dr. Elroi.
+# Copy to Memurai/dr-elroi.conf and set a real password. The real file is git-ignored.
+port 6379
+bind 127.0.0.1
+requirepass CHANGE_ME
+dir "./Memurai/data"
+save ""
+appendonly no

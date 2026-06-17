@@ -1,0 +1,34 @@
+{
+  "_comment": "Template for medplum/packages/server/medplum.config.json. Copy into the Medplum server and fill in real values. The real file is git-ignored because it embeds DB/Redis/reCAPTCHA secrets.",
+  "port": 8103,
+  "baseUrl": "http://localhost:8103/",
+  "appBaseUrl": "http://localhost:3002/",
+  "binaryStorage": "file:./binary/",
+  "storageBaseUrl": "http://localhost:8103/storage/",
+  "supportEmail": "\"Dr. Elroi\" <support@example.com>",
+  "googleClientId": "",
+  "googleClientSecret": "",
+  "recaptchaSiteKey": "your-recaptcha-site-key",
+  "recaptchaSecretKey": "your-recaptcha-secret-key",
+  "vmContextBotsEnabled": true,
+  "defaultBotRuntimeVersion": "vmcontext",
+  "allowedOrigins": "*",
+  "introspectionEnabled": true,
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "dbname": "medplum",
+    "username": "medplum",
+    "password": "CHANGE_ME"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "password": "CHANGE_ME"
+  },
+  "bullmq": {
+    "removeOnFail": { "count": 1 },
+    "removeOnComplete": { "count": 1 }
+  },
+  "shutdownTimeoutMilliseconds": 30000
+}

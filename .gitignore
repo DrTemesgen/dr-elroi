@@ -1,0 +1,91 @@
+# ===================================================================
+# Dr. Elroi — local-first healthcare EMR
+# This repo holds ONLY the user-authored product layer. Everything
+# below is either re-downloaded/installed locally, a secret, or PHI,
+# and MUST NEVER be committed.
+# ===================================================================
+
+# --- Secrets & environment (CRITICAL) ---
+.env
+*.env
+**/.env
+# keep the safe templates:  connector/.env.example, config-examples/*
+# Real Medplum/Memurai configs embed DB/Redis/reCAPTCHA/client secrets:
+medplum.config.json
+test.config.json
+**/medplum.config.json
+**/test.config.json
+**/values-local.yaml
+docker-compose.full-stack.yml
+dr-elroi.conf
+**/dr-elroi.conf
+*.pem
+*.key
+*.pfx
+secrets/
+credentials/
+
+# --- PHI / patient data & operational logs (CRITICAL) ---
+pgdata/
+connector/data/
+**/audit.jsonl
+binary/
+**/binary/
+*.log
+*.log.err
+pglog.txt
+pgctl-out.txt
+test-request.json
+test-response.json
+
+# --- Vendored third-party Medplum clone & example apps ---
+# (reproduce by cloning upstream + applying patches/ — see docs/SETUP.md)
+medplum/
+medplum-extras/
+
+# --- Bundled runtimes / installed services (download on clone) ---
+node-v24.16.0-win-x64/
+pgsql/
+Ollama/
+Kokoro/
+Memurai/
+
+# --- AI models / large blobs ---
+*.onnx
+*.bin
+*.gguf
+*.safetensors
+models/
+**/blobs/
+
+# --- Downloadable data artifacts ---
+connector/icd10cm.zip
+*.zip
+
+# --- Node / build outputs ---
+node_modules/
+dist/
+build/
+out/
+.cache/
+*.tsbuildinfo
+coverage/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# --- Editor / OS / agent cruft ---
+.vscode/
+.idea/
+.claude/
+*.swp
+*~
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
