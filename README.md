@@ -1,5 +1,9 @@
 # Dr. Elroi 🩺🤖
 
+![Dr. Elroi — the EMR with a clinical AI built in](docs/assets/banner.svg)
+
+### 🌐 Live showcase → **[dr-elroi-demo.vercel.app](https://dr-elroi-demo.vercel.app)**
+
 **An AI-native, offline-first EMR/EHR for primary care.** Dr. Elroi reimagines the electronic medical
 record around a clinical AI that is *built in* — not bolted on — and runs **entirely on local hardware**,
 so it works in a GP office, a rural clinic, or a busy medical plaza even with no internet, and patient

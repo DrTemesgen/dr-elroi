@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a2419"/>
+      <stop offset="0.55" stop-color="#06120d"/>
+      <stop offset="1" stop-color="#04100b"/>
+    </linearGradient>
+    <linearGradient id="em" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10b981"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#10b981" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="22" fill="url(#glow)"/>
+
+  <!-- logo mark -->
+  <g transform="translate(72,86)">
+    <rect width="76" height="76" rx="20" fill="url(#em)"/>
+    <path d="M38 60 C 18 46, 18 28, 30 24 C 36 22, 38 28, 38 30 C 38 28, 40 22, 46 24 C 58 28, 58 46, 38 60 Z" fill="#04130d"/>
+  </g>
+
+  <!-- wordmark + tagline -->
+  <text x="172" y="118" fill="#e8f6ef" font-size="30" font-weight="700" letter-spacing="0.5">Dr. Elroi</text>
+  <text x="172" y="146" fill="#2dd4bf" font-size="15" font-weight="600" letter-spacing="2">AI-NATIVE · OFFLINE-FIRST · OPEN SOURCE</text>
+
+  <text x="72" y="222" fill="#ffffff" font-size="46" font-weight="800">The EMR with a clinical AI <tspan fill="#2dd4bf">built in</tspan>.</text>
+  <text x="72" y="266" fill="#9cbcae" font-size="20">A medical LLM that runs on local hardware — for GP offices and clinics, fully offline.</text>
+
+  <!-- feature chips -->
+  <g font-size="15" font-weight="600">
+    <g transform="translate(72,300)">
+      <rect width="190" height="36" rx="18" fill="#0e271d" stroke="#1f5740"/>
+      <text x="95" y="24" text-anchor="middle" fill="#cfeede">On-device LLM</text>
+    </g>
+    <g transform="translate(276,300)">
+      <rect width="150" height="36" rx="18" fill="#0e271d" stroke="#1f5740"/>
+      <text x="75" y="24" text-anchor="middle" fill="#cfeede">AI Scribe</text>
+    </g>
+    <g transform="translate(440,300)">
+      <rect width="200" height="36" rx="18" fill="#0e271d" stroke="#1f5740"/>
+      <text x="100" y="24" text-anchor="middle" fill="#cfeede">Ask about a patient</text>
+    </g>
+    <g transform="translate(654,300)">
+      <rect width="185" height="36" rx="18" fill="#0e271d" stroke="#1f5740"/>
+      <text x="92" y="24" text-anchor="middle" fill="#cfeede">Patient portal</text>
+    </g>
+  </g>
+
+  <!-- FHIR / Medplum note -->
+  <text x="1128" y="330" text-anchor="end" fill="#5f7d70" font-size="13">Built on Medplum (FHIR) + MedGemma</text>
+</svg>
